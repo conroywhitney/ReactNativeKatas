@@ -24,8 +24,10 @@ const AlignmentAxis= (props)=>{
   return (
     <View style={styles.container}>
       <Box />
-      <Box />
-      <Box />
+      <View style={styles.oddballs}>
+        <Box />
+        <Box />
+      </View>
       <Box />
       <Text style={styles.text}>Alignment and Axis</Text>
     </View>
@@ -40,6 +42,11 @@ const styles = StyleSheet.create({
     flex:1,
     backgroundColor: colors[2],
   },
+  oddballs: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'flex-end'
+  },
   text:{
     color: 'white',
     textAlign:'center'
@@ -52,4 +59,3 @@ const styles = StyleSheet.create({
 
 AlignmentAxis.displayName = 'AlignmentAxis'
 export default AlignmentAxis
-

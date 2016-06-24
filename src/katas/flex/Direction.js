@@ -47,5 +47,3 @@ const styles = StyleSheet.create({
 Direction.displayName = 'Direction'
 import DirectionTest from './Direction.test'
 export {Direction, DirectionTest}
-
-

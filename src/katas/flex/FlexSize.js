@@ -51,5 +51,3 @@ const styles = StyleSheet.create({
 FlexSize.displayName = 'FlexSize'
 import FlexSizeTest from './FlexSize.test'
 export {FlexSize, FlexSizeTest}
-
-

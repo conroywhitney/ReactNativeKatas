@@ -27,9 +27,9 @@ const Direction= (props)=>{
       <Box/>
       <Box/>
       <View style={{flexDirection:'row'}}>
-      <Box/>
-      <Box/>
-      <Box/>
+        <Box/>
+        <Box/>
+        <Box/>
       </View>
       <Text style={styles.text}>Direction</Text>
     </View>
@@ -40,6 +40,7 @@ const Direction= (props)=>{
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors[3],
+    flex: 1
   },
   text:{
     color: 'white',
@@ -53,4 +54,3 @@ const styles = StyleSheet.create({
 
 Direction.displayName = 'Direction'
 export default Direction
-

@@ -25,11 +25,15 @@ const Alignment= (props)=>{
   return (
     <View style={styles.container}>
       <Box/>
-      <Box/>
-      <Box/>
-      <Box/>
-      <Box/>
-      <Box/>
+      <View style={styles.cross}>
+        <Box/>
+        <View style={styles.crossCenter}>
+          <Box/>
+          <Box/>
+          <Box/>
+        </View>
+        <Box/>
+      </View>
       <Box/>
       <Text style={styles.text}>
         Alignment
@@ -45,6 +49,15 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: colors[1],
     flex:1,
+    justifyContent: 'flex-start'
+  },
+  cross: {
+    flexDirection: 'column',
+    flexWrap: 'wrap',
+    alignItems: 'center'
+  },
+  crossCenter: {
+    flexDirection: 'row'
   },
   text:{
     color: 'white',
@@ -58,4 +71,3 @@ const styles = StyleSheet.create({
 
 Alignment.displayName = 'Alignment'
 export default Alignment
-
